@@ -1,0 +1,9 @@
+Changes
+LICENSE
+MANIFEST
+META.yml
+Makefile.PL
+README
+lib/Data/Rx/Type/Perl/Obj.pm
+lib/Data/Rx/TypeBundle/Perl.pm
+t/basic.t
