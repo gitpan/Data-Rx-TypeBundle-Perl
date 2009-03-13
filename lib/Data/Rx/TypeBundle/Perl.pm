@@ -1,12 +1,13 @@
 use strict;
 use warnings;
 package Data::Rx::TypeBundle::Perl;
-our $VERSION = '0.002';
+our $VERSION = '0.003';
 
 use base 'Data::Rx::TypeBundle';
 # ABSTRACT: experimental / perl types
 
 use Data::Rx::Type::Perl::Obj;
+use Data::Rx::Type::Perl::Code;
 
 
 sub _prefix_pairs {
@@ -16,7 +17,10 @@ sub _prefix_pairs {
 }
 
 sub type_plugins {
-  return qw(Data::Rx::Type::Perl::Obj);
+  return qw(
+    Data::Rx::Type::Perl::Code
+    Data::Rx::Type::Perl::Obj
+  );
 }
 
 1;
@@ -31,7 +35,7 @@ Data::Rx::TypeBundle::Perl - experimental / perl types
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 

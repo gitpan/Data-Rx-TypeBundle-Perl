@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 package Data::Rx::Type::Perl::Obj;
-our $VERSION = '0.002';
+our $VERSION = '0.003';
 
 # ABSTRACT: experimental / perl object type
 
@@ -42,10 +42,6 @@ sub check {
 
 1;
 
-
-
-
-
 __END__
 
 =pod
@@ -56,7 +52,7 @@ Data::Rx::Type::Perl::Obj - experimental / perl object type
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
@@ -79,16 +75,10 @@ version 0.002
     ok($isa_rx->check($rx),   "a Data::Rx object isa Data::Rx /perl/obj");
     ok(! $isa_rx->check( 1 ), "1 is not a Data::Rx /perl/obj");
 
-=head1 AUTHOR
+=head1 ARGUMENTS
 
-    Ricardo SIGNES <rjbs@cpan.org>
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is copyright (c) 2009 by Ricardo SIGNES.
-
-This is free software; you can redistribute it and/or modify it under
-the same terms as perl itself.
+"isa" and "does" ensure that the object passes the relevant test for the
+identifier given.
 
 =head1 AUTHOR
 

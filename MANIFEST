@@ -4,6 +4,8 @@ MANIFEST
 META.yml
 Makefile.PL
 README
+dist.ini
+lib/Data/Rx/Type/Perl/Code.pm
 lib/Data/Rx/Type/Perl/Obj.pm
 lib/Data/Rx/TypeBundle/Perl.pm
 t/basic.t
