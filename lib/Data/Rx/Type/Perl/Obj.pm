@@ -1,8 +1,9 @@
 use strict;
 use warnings;
 package Data::Rx::Type::Perl::Obj;
-our $VERSION = '0.003';
-
+BEGIN {
+  $Data::Rx::Type::Perl::Obj::VERSION = '0.004';
+}
 # ABSTRACT: experimental / perl object type
 
 
@@ -43,7 +44,6 @@ sub check {
 1;
 
 __END__
-
 =pod
 
 =head1 NAME
@@ -52,28 +52,28 @@ Data::Rx::Type::Perl::Obj - experimental / perl object type
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 SYNOPSIS
 
-    use Data::Rx;
-    use Data::Rx::Type::Perl::Obj;
-    use Test::More tests => 2;
+  use Data::Rx;
+  use Data::Rx::Type::Perl::Obj;
+  use Test::More tests => 2;
 
-    my $rx = Data::Rx->new({
-      prefix  => {
-        perl => 'tag:codesimply.com,2008:rx/perl/',
-      },
-      type_plugins => [ 'Data::Rx::Type::Perl::Obj' ]
-    });
+  my $rx = Data::Rx->new({
+    prefix  => {
+      perl => 'tag:codesimply.com,2008:rx/perl/',
+    },
+    type_plugins => [ 'Data::Rx::Type::Perl::Obj' ]
+  });
 
-    my $isa_rx = $rx->make_schema({
-      type       => '/perl/obj',
-      isa        => 'Data::Rx',
-    });
+  my $isa_rx = $rx->make_schema({
+    type       => '/perl/obj',
+    isa        => 'Data::Rx',
+  });
 
-    ok($isa_rx->check($rx),   "a Data::Rx object isa Data::Rx /perl/obj");
-    ok(! $isa_rx->check( 1 ), "1 is not a Data::Rx /perl/obj");
+  ok($isa_rx->check($rx),   "a Data::Rx object isa Data::Rx /perl/obj");
+  ok(! $isa_rx->check( 1 ), "1 is not a Data::Rx /perl/obj");
 
 =head1 ARGUMENTS
 
@@ -82,15 +82,14 @@ identifier given.
 
 =head1 AUTHOR
 
-  Ricardo SIGNES <rjbs@cpan.org>
+Ricardo SIGNES <rjbs@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2009 by Ricardo SIGNES.
+This software is copyright (c) 2010 by Ricardo SIGNES.
 
 This is free software; you can redistribute it and/or modify it under
-the same terms as perl itself.
+the same terms as the Perl 5 programming language system itself.
 
-=cut 
-
+=cut
 
