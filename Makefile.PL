@@ -4,33 +4,40 @@ use warnings;
 
 
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'experimental / perl types',
-  'AUTHOR' => 'Ricardo SIGNES <rjbs@cpan.org>',
-  'BUILD_REQUIRES' => {
-    'Data::Rx' => '0.005',
-    'Test::More' => '0.88'
+  "ABSTRACT" => "experimental / perl types",
+  "AUTHOR" => "Ricardo SIGNES <rjbs\@cpan.org>",
+  "BUILD_REQUIRES" => {
+    "Data::Rx" => "0.005",
+    "File::Find" => 0,
+    "File::Temp" => 0,
+    "Test::More" => "0.96"
   },
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'Data-Rx-TypeBundle-Perl',
-  'EXE_FILES' => [],
-  'LICENSE' => 'perl',
-  'NAME' => 'Data::Rx::TypeBundle::Perl',
-  'PREREQ_PM' => {
-    'Carp' => '0',
-    'Data::Rx' => '0.005',
-    'Data::Rx::TypeBundle' => '0',
-    'Scalar::Util' => '0'
+  "DISTNAME" => "Data-Rx-TypeBundle-Perl",
+  "EXE_FILES" => [],
+  "LICENSE" => "perl",
+  "NAME" => "Data::Rx::TypeBundle::Perl",
+  "PREREQ_PM" => {
+    "Carp" => 0,
+    "Data::Rx" => "0.005",
+    "Data::Rx::CommonType::EasyNew" => 0,
+    "Data::Rx::TypeBundle" => 0,
+    "Scalar::Util" => 0,
+    "base" => 0,
+    "parent" => 0,
+    "strict" => 0,
+    "warnings" => 0
   },
-  'VERSION' => '0.004',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "0.005",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 

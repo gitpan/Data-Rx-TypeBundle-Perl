@@ -1,8 +1,8 @@
 use strict;
 use warnings;
 package Data::Rx::TypeBundle::Perl;
-BEGIN {
-  $Data::Rx::TypeBundle::Perl::VERSION = '0.004';
+{
+  $Data::Rx::TypeBundle::Perl::VERSION = '0.005';
 }
 use base 'Data::Rx::TypeBundle';
 # ABSTRACT: experimental / perl types
@@ -37,7 +37,7 @@ Data::Rx::TypeBundle::Perl - experimental / perl types
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 SYNOPSIS
 
@@ -63,7 +63,7 @@ Ricardo SIGNES <rjbs@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Ricardo SIGNES.
+This software is copyright (c) 2012 by Ricardo SIGNES.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
