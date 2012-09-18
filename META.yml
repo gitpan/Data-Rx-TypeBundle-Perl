@@ -18,7 +18,7 @@ meta-spec:
 name: Data-Rx-TypeBundle-Perl
 requires:
   Carp: 0
-  Data::Rx: 0.005
+  Data::Rx: 0.200002
   Data::Rx::CommonType::EasyNew: 0
   Data::Rx::TypeBundle: 0
   Scalar::Util: 0
@@ -29,7 +29,7 @@ requires:
 resources:
   homepage: https://github.com/rjbs/data-rx-type-perl
   repository: https://github.com/rjbs/data-rx-type-perl.git
-version: 0.005
+version: 0.006
 x_Dist_Zilla:
   plugins:
     -

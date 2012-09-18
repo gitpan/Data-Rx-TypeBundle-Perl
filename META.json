@@ -22,7 +22,7 @@
       "runtime" : {
          "requires" : {
             "Carp" : "0",
-            "Data::Rx" : "0.005",
+            "Data::Rx" : "0.200002",
             "Data::Rx::CommonType::EasyNew" : "0",
             "Data::Rx::TypeBundle" : "0",
             "Scalar::Util" : "0",
@@ -50,7 +50,7 @@
          "web" : "https://github.com/rjbs/data-rx-type-perl"
       }
    },
-   "version" : "0.005",
+   "version" : "0.006",
    "x_Dist_Zilla" : {
       "plugins" : [
          {

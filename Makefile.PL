@@ -26,7 +26,7 @@ my %WriteMakefileArgs = (
   "NAME" => "Data::Rx::TypeBundle::Perl",
   "PREREQ_PM" => {
     "Carp" => 0,
-    "Data::Rx" => "0.005",
+    "Data::Rx" => "0.200002",
     "Data::Rx::CommonType::EasyNew" => 0,
     "Data::Rx::TypeBundle" => 0,
     "Scalar::Util" => 0,
@@ -35,7 +35,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.005",
+  "VERSION" => "0.006",
   "test" => {
     "TESTS" => "t/*.t"
   }

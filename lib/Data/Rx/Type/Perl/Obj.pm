@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package Data::Rx::Type::Perl::Obj;
 {
-  $Data::Rx::Type::Perl::Obj::VERSION = '0.005';
+  $Data::Rx::Type::Perl::Obj::VERSION = '0.006';
 }
 # ABSTRACT: experimental / perl object type
 use parent 'Data::Rx::CommonType::EasyNew';
@@ -32,8 +32,6 @@ sub guts_from_arg {
 
 sub assert_valid {
   my ($self, $value) = @_;
-
-  local $@;
 
   unless (Scalar::Util::blessed($value)) {
     $self->fail({
@@ -73,7 +71,7 @@ Data::Rx::Type::Perl::Obj - experimental / perl object type
 
 =head1 VERSION
 
-version 0.005
+version 0.006
 
 =head1 SYNOPSIS
 

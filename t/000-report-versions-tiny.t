@@ -50,7 +50,7 @@ sub pmver {
 }
 
 eval { $v .= pmver('Carp','any version') };
-eval { $v .= pmver('Data::Rx','0.005') };
+eval { $v .= pmver('Data::Rx','0.200002') };
 eval { $v .= pmver('Data::Rx::CommonType::EasyNew','any version') };
 eval { $v .= pmver('Data::Rx::TypeBundle','any version') };
 eval { $v .= pmver('ExtUtils::MakeMaker','6.30') };
