@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package Data::Rx::Type::Perl::Ref;
 {
-  $Data::Rx::Type::Perl::Ref::VERSION = '0.007';
+  $Data::Rx::Type::Perl::Ref::VERSION = '0.008';
 }
 # ABSTRACT: experimental / perl reference type
 use parent 'Data::Rx::CommonType::EasyNew';
@@ -68,13 +68,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 Data::Rx::Type::Perl::Ref - experimental / perl reference type
 
 =head1 VERSION
 
-version 0.007
+version 0.008
 
 =head1 SYNOPSIS
 

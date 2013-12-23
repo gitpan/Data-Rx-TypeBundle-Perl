@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package Data::Rx::Type::Perl::Obj;
 {
-  $Data::Rx::Type::Perl::Obj::VERSION = '0.007';
+  $Data::Rx::Type::Perl::Obj::VERSION = '0.008';
 }
 # ABSTRACT: experimental / perl object type
 use parent 'Data::Rx::CommonType::EasyNew';
@@ -66,13 +66,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 Data::Rx::Type::Perl::Obj - experimental / perl object type
 
 =head1 VERSION
 
-version 0.007
+version 0.008
 
 =head1 SYNOPSIS
 
