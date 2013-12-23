@@ -48,16 +48,16 @@
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/rjbs/Data-Rx-Type-Perl/issues"
+         "web" : "https://github.com/rjbs/Data-Rx-TypeBundle-Perl/issues"
       },
-      "homepage" : "https://github.com/rjbs/Data-Rx-Type-Perl",
+      "homepage" : "https://github.com/rjbs/Data-Rx-TypeBundle-Perl",
       "repository" : {
          "type" : "git",
-         "url" : "https://github.com/rjbs/Data-Rx-Type-Perl.git",
-         "web" : "https://github.com/rjbs/Data-Rx-Type-Perl"
+         "url" : "https://github.com/rjbs/Data-Rx-TypeBundle-Perl.git",
+         "web" : "https://github.com/rjbs/Data-Rx-TypeBundle-Perl"
       }
    },
-   "version" : "0.008",
+   "version" : "0.009",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.018001"

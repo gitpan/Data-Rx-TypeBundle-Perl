@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package Data::Rx::Type::Perl::Code;
 {
-  $Data::Rx::Type::Perl::Code::VERSION = '0.008';
+  $Data::Rx::Type::Perl::Code::VERSION = '0.009';
 }
 # ABSTRACT: experimental / perl coderef type
 use parent 'Data::Rx::CommonType::EasyNew';
@@ -88,7 +88,7 @@ Data::Rx::Type::Perl::Code - experimental / perl coderef type
 
 =head1 VERSION
 
-version 0.008
+version 0.009
 
 =head1 SYNOPSIS
 

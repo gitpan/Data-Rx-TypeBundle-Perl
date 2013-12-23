@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package Data::Rx::TypeBundle::Perl;
 {
-  $Data::Rx::TypeBundle::Perl::VERSION = '0.008';
+  $Data::Rx::TypeBundle::Perl::VERSION = '0.009';
 }
 use base 'Data::Rx::TypeBundle';
 # ABSTRACT: experimental / perl types
@@ -40,7 +40,7 @@ Data::Rx::TypeBundle::Perl - experimental / perl types
 
 =head1 VERSION
 
-version 0.008
+version 0.009
 
 =head1 SYNOPSIS
 
